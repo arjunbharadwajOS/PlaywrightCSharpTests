@@ -19,16 +19,19 @@
         public async Task enterUserName(string userName)
         {
             await _txtUserName.FillAsync(userName);
+            //_test.Log(Status.Pass, "Title is correct: ");
         }
 
         public async Task enterPassword(string password)
         {
             await _txtPassword.FillAsync(password);
+            //_test.Log(Status.Pass, "Title is correct: ");
         }
 
         public async Task clickLogin()
         {
             await _clickLogin.ClickAsync();
+            //_test.Log(Status.Pass, "Title is correct: ");
         }
     }
 }
